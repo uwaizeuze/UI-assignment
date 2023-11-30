@@ -3,6 +3,8 @@ import React from "react";
 import ImageCard from "../ImageCard/imageCard";
 
 const Testionmal = () => {
+  const imageCards = Array.from({ length: 3 }, (_, index) => <ImageCard key={index} />);
+
   return (
     <div className="h-[60vh] bg-[#235193]">
       <div className=" flex justify-center items-center flex-col">
@@ -15,8 +17,8 @@ const Testionmal = () => {
           begins here.
         </p>
       </div>
-      <div>
-        <ImageCard />
+      <div className="flex justify-between items-center mt-6 mx-[28rem]">
+      {imageCards}
       </div>
     </div>
   );
