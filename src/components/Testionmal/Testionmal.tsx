@@ -1,6 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import ImageCard from "../ImageCard/imageCard";
+import AppImage from "../../../public/assets/AppImage.svg";
+import Videos from "../../../public/assets/Video.svg";
+import Blog from "../../../public/assets/BLog.svg";
+import Book from "../../../public/assets/Book.svg";
 
 const Testionmal = () => {
   return (
@@ -15,8 +19,11 @@ const Testionmal = () => {
           begins here.
         </p>
       </div>
-      <div>
-        <ImageCard />
+      <div className="flex justify-between items-center  w-1/2 mx-auto gap-4">
+        <ImageCard imageUrl={Blog} />
+        <ImageCard imageUrl={Videos} />
+        <ImageCard imageUrl={AppImage} />
+        <ImageCard imageUrl={Book} />
       </div>
     </div>
   );
