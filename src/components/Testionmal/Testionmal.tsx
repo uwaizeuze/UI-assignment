@@ -7,6 +7,10 @@ import Blog from "../../../public/assets/BLog.svg";
 import Book from "../../../public/assets/Book.svg";
 
 const Testionmal = () => {
+  const imageCards = Array.from({ length: 3 }, (_, index) => (
+    <ImageCard key={index} />
+  ));
+
   return (
     <div className="h-[60vh] bg-[#235193]">
       <div className=" flex justify-center items-center flex-col">
@@ -19,11 +23,8 @@ const Testionmal = () => {
           begins here.
         </p>
       </div>
-      <div className="flex justify-between items-center  w-1/2 mx-auto gap-4">
-        <ImageCard imageUrl={Blog} />
-        <ImageCard imageUrl={Videos} />
-        <ImageCard imageUrl={AppImage} />
-        <ImageCard imageUrl={Book} />
+      <div>
+        <ImageCard />
       </div>
     </div>
   );

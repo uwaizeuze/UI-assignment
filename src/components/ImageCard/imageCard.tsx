@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import AppImage from "../../../public/assets/AppImage.svg";
 
-const ImageCard = ({ imageUrl }: any) => {
-  return <Image src={imageUrl} alt={imageUrl} width={150} height={150} />;
+const ImageCard = () => {
+  return <Image src={AppImage} alt="Example Image" width={200} height={200} />;
 };
 
 export default ImageCard;
